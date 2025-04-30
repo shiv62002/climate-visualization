@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Climate Data Visualization</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="intro">
+    <h1>Understanding Climate Change Through Data</h1>
+    <p>
+      This dashboard visualizes CO₂ concentrations, temperature & precipitation trends, and sea level rise using NOAA and IMF climate datasets. 
+      The goal is to help users connect raw climate statistics with environmental and societal impacts.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="panel" id="panelA">
+      <h2>CO₂ Concentration (ppm)</h2>
+      <div id="co2Chart"></div>
+    </div>
+
+    <div class="panel" id="panelB">
+      <h2>Temperature & Precipitation Trends (Sample)</h2>
+      <div id="tempPrecipChart"></div>
+    </div>
+
+    <div class="panel" id="panelC">
+      <h2>Sea Level Rise (mm)</h2>
+      <div id="seaLevelChart"></div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
